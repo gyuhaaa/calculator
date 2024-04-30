@@ -15,6 +15,4 @@ function onClickNumber(number) {
   } else {
     resultEl.innerHTML += number; 
   }
-
-  console.log(resultEl.innerHTML.length);
 }
