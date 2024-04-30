@@ -59,3 +59,14 @@ function onClickEnter() {
       break;
   }
 }
+
+function onClickDelete() {
+  resultEl.innerHTML = resultEl.innerHTML.substring(
+    0,
+    resultEl.innerHTML.length - 1
+  );
+
+  if (resultEl.innerHTML.length === 0) {
+    resultEl.innerHTML = 0;
+  }
+}
