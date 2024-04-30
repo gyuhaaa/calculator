@@ -15,4 +15,23 @@ function onClickNumber(number) {
   } else {
     resultEl.innerHTML += number; 
   }
+
+  // if (resultEl.innerHTML.length === 3 || resultEl.innerHTML.length === 8) {
+  //   resultEl.innerHTML += `-${number}`;
+  // } else {
+  //   resultEl.innerHTML += number;
+  // }
+}
+
+// +, -, *, / 눌렀을 때
+// 현재 입력한 숫자를 저장 (문자 -> 숫자)
+// resultEl.innerHTML = 0;
+function onClickOperator(inputOperator) {
+  result = +resultEl.innerHTML;
+
+  resultEl.innerHTML = 0;
+
+  operator = inputOperator;
+
+  console.log(operator);
 }
